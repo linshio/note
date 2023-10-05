@@ -21,7 +21,7 @@
 | git add 文件名 | 添加打暂存区 |
 | git commit -m "日志信息" 文件名 | 提交到本地库 |
 | git reflog | 查看历史记录 |
-| git log --all --graph --decorate | 以图的形式查看日志 |
+| git log --all --graph --decorate --oneline| 以图的形式查看日志 |
 | git diff | 显示自上次提交之后发生的变动 |
 | git reset --hard 版本号 | 版本穿梭 |
 
