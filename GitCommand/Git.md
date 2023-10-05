@@ -298,7 +298,7 @@ $ git remote -v
 ```
 ### 创建别名
 
-- `git remote add <别名> <git上远程库的地址>`
+- `git remote add <别名> <git上远程库的地址>:<git上远程仓库上面的分支>`
 ```git
 AZ@lingxi MINGW64 /d/Project/Git-Space/git-demo (master)
 $ git remote add git-demo https://github.com/H-liang-end/git-demo.git
