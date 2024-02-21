@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //setInterval(函数名，间隔时间MS)函数名不用加上小括号
+    // setInterval(function (){
+    //     console.log('hello')
+    // },1000)
+
+    //注意事项 ： 调用函数名不用加上小括号
+    //setInterval会有一个返回值序号
+    let level =  setInterval(test, 1000)
+
+    function test(){
+        console.log("hello")
+    }
+    //关闭定时器
+    clearInterval(level)
+
+</script>
+</body>
+</html>

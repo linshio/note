@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="yeye">
+    <div class="baba">
+        <div class="son"></div>
+    </div>
+</div>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+</ul>
+<script>
+    //查找父节点 parentNode
+    console.log(document.querySelector('.son').parentNode.parentNode)
+    //查找子节点 返回值为一个伪数组
+    console.log(document.querySelector('.yeye').children);
+
+    //选择兄弟节点
+
+    //选择上一个兄弟
+    console.log(document.querySelector('ul li:nth-child(2)').previousElementSibling)
+    //选择下一个兄弟
+    console.log(document.querySelector('ul li:nth-child(2)').nextElementSibling);
+</script>
+</body>
+</html>

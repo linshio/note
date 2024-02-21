@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+
+<script>
+    const input = document.querySelector('input')
+    //获得焦点
+    input.addEventListener('focus',()=>{
+        console.log('focus hello')
+    })
+
+    //失去焦点
+    input.addEventListener('blur',()=>{
+        console.log('blur hello')
+    })
+</script>
+</body>
+</html>

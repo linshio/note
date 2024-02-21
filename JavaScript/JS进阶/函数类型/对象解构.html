@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const obj = {
+        uname:'az',
+        age:22
+    }
+
+    //写法 等价于
+    const {uname,age} = obj
+    // const uname = obj.uname
+    // const age = obj.age
+    console.log(uname,age);
+
+
+    //对象解构的改名
+    const {uname:name,age:ag}=obj
+    console.log(name,ag)
+
+    //数组对象的解构
+    const [{uname:x,age:y}] = [{
+        uname:'za',
+        age:33
+    }]
+    console.log(x,y)
+</script>
+</body>
+</html>

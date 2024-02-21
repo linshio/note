@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            /*display: inline-block;*/
+            background-color: #27BA9B;
+            margin: 100px;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+
+<script>
+    //offset的位置包含了页边距与边框
+    //获取元素距离自己定位父级元素的左、上距离
+    const div = document.querySelector('div')
+    console.log(div.offsetLeft);
+    console.log(div.offsetTop);
+</script>
+</body>
+</html>

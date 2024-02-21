@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div{
+      /*width: 200px;*/
+      height: 200px;
+      display: inline-block;
+      background-color: #27BA9B;
+    }
+  </style>
+</head>
+<body>
+<div>123123dasds12</div>
+<script>
+//浏览器窗口大小发生变化的时候触发的事件
+window.addEventListener('resize',function (e){
+  console.log('666')
+})
+//获取到宽与高
+const div = document.querySelector('div')
+console.log(div.clientWidth)
+</script>
+</body>
+</html>

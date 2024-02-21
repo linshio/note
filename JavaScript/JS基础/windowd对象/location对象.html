@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="#/az">az</a>
+
+<script>
+    // console.log(location)
+    //location.href跳转页面
+    // location.href = 'https://www.baidu.com'
+
+    //hash获取地址中的hash值 使用#后面的部分
+    console.log(location.hash);
+
+    //得到的是链接符号？后面的内容
+    console.log(location.search);
+
+    //刷新页面
+    document.querySelector('a').addEventListener('click',function (e){
+        e.preventDefault()
+        location.reload()
+        //强制刷新
+        location.reload(true)
+    })
+</script>
+</body>
+</html>

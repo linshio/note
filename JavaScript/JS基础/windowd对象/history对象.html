@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>back</button>
+<button>forward</button>
+<script>
+  const back = document.querySelector('button:first-child')
+  const forward = back.nextElementSibling
+  back.addEventListener('click',function (){
+    //后退一步
+    history.back()
+    //后退两步
+    history.go(-2)
+  })
+  forward.addEventListener('click',function (){
+    //前进一步
+    history.forward()
+    //前进两步
+    history.go(2)
+  })
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script>
+  function People(name,age){
+    this.name = name
+    this.age = age
+      //不要使用这种方式构造函数 ， 会浪费内存
+    //this.sayHello = it => console.log(it)
+  }
+  //使用这种方式进行代替 这个里面的this也是指向的实例化对象
+  People.prototype.sayHello = con=>console.log(con)
+
+  const student = new People('az',22)
+  student.sayHello(666)
+  //静态方法
+  People.do = e => console.log(e)
+  People.do('hello')
+
+</script>
+</body>
+</html>

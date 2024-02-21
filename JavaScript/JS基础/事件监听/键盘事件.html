@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+<script>
+    const input = document.querySelector('input')
+    //按下键盘
+    input.addEventListener('keydown',()=>{
+        console.log('keydown')
+    })
+
+    //键盘弹起
+    input.addEventListener('keyup',()=>{
+        console.log('keyup')
+    })
+
+
+    //用户输入文本事件
+    input.addEventListener('input',()=>{
+        console.log(input.value)
+    })
+
+</script>
+</body>
+</html>

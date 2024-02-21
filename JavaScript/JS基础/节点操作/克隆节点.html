@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+<script>
+    const ul = document.querySelector('ul')
+    //克隆节点 cloneNode(boolean) true为深克隆 false为浅克隆
+    const node = ul.children[0].cloneNode(true);
+    //追加节点
+    ul.appendChild(node)
+</script>
+</body>
+</html>

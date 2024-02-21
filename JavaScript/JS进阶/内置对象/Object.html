@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const o = {
+        name:'az',
+        age:22
+    }
+    //取出所有的key
+    console.log(Object.keys(o))
+    //取出value
+    console.log(Object.values(o))
+
+    //reduce方法可以 对上一个的值与当前的值进行操作
+    const arr = [1,3,5,7,9]
+    console.log(arr.reduce((prev, current) => prev + current,0));
+</script>
+</body>
+</html>

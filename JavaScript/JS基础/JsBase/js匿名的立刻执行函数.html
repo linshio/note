@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    (function () {
+      console.log('我是匿名立即执行函数')
+    })();
+    //匿名函数的使用 写法1
+    (function (x, y) {
+      console.log(x + y)
+    })(1, 2);
+    //写法2
+    ((function abs(x, y) {
+      console.log(x + y)
+    })(3, 4));
+  
+  </script>
+</body>
+
+</html>

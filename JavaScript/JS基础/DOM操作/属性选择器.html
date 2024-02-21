@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /*input[data-id]{*/
+        /*    color: red;*/
+        /*}*/
+        /*input[data-id='7']{*/
+        /*    color: #00aeec;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<input type="text" data-id="6" data-name="az">
+<input type="text" data-id="7" data-name="wa">
+<script>
+    document.querySelector('[data-name=wa]').value = 666;
+    document.querySelector('[data-name]').style.color = 'red'
+</script>
+</body>
+</html>

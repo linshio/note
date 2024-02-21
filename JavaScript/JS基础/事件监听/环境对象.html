@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>点击</button>
+<script>
+    function fn(){
+        console.log(this)
+    }
+    fn()//普通函数里面的this对象指向的是window
+
+    const button = document.querySelector('button')
+    button.addEventListener('click',function (){
+        this.style.color = 'red'
+    })
+</script>
+</body>
+</html>

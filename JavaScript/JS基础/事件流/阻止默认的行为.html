@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="https://www.bilibili.com">
+    <input type="submit" value="提交">
+</form>
+
+<script>
+    const form = document.querySelector('form')
+    form.addEventListener('submit',function (e){
+        //阻止提交按钮能够正常使用 也就是阻止默认的行为
+        e.preventDefault()
+    })
+</script>
+</body>
+</html>

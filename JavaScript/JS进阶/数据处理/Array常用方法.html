@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+</ul>
+
+<script>
+    const arr = [
+        {
+            name:'aa',
+            price:666
+        },
+        {
+            name:'bb',
+            price:333
+        }
+    ]
+
+    //find 查找数组中返回指定条件的对象
+    console.log(arr.find(item => item.name === 'aa'));
+
+    //every是所有的元素都要满足为true  some是只要满足一个就为true
+    const arry = [10,20,30]
+    console.log(arry.every(item => item >= 20));
+    console.log(arry.some(item => item >= 20));
+
+    //将伪数组转化为真数组
+    const lists = document.querySelectorAll('ul li')
+    console.log(Array.from(lists));
+</script>
+</body>
+</html>

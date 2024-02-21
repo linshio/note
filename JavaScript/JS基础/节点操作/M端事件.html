@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+  <style>
+    div{
+      height: 200px;
+      width: 200px;
+      background-color: #27BA9B;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+<script>
+  //M端就是移动端的意思
+  const htmlDivElement = document.querySelector('div');
+  htmlDivElement.addEventListener('touchstart',function (){
+    console.log('开始摸我了')
+  })
+  htmlDivElement.addEventListener('touchend',function (){
+    console.log('结束摸我了')
+  })
+  htmlDivElement.addEventListener('touchmove',function (){
+    console.log('一直摸我在移动')
+  })
+</script>
+</body>
+</html>

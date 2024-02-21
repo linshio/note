@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+  <li>第一</li>
+</ul>
+<script>
+  //创建节点
+  const li = document.createElement('li')
+  li.innerHTML = 'hello world'
+  //追加节点
+  //插入到父节点的最后一个元素
+  const ul = document.querySelector('ul')
+  // ul.appendChild(li)
+  //插入到某个子元素的前面
+  ul.insertBefore(li,ul.children[0])
+</script>
+</body>
+</html>

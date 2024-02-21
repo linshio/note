@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div></div>
+<script>
+    //当前时间的实例化
+    const date = new Date()
+
+    //获得年份
+    console.log(date.getFullYear());
+    //获得月份
+    console.log(date.getMonth()+1);
+    //获得月份中的当前天
+    console.log(date.getDate());
+    //获取星期
+    console.log(date.getDay());
+    //获取小时
+    console.log(date.getHours());
+    //获取分钟
+    console.log(date.getMinutes());
+    //获取秒
+    console.log(date.getSeconds());
+
+
+    //日期格式化
+    const div = document.querySelector('div')
+    //直接获得事件和日期
+    // div.innerHTML = date.toLocaleString()
+    //直接获得日期
+    // div.innerHTML = date.toLocaleDateString()
+    //直接获得事件
+    // div.innerHTML = date.toLocaleTimeString()
+    setInterval(function (){
+        let date = new Date()
+        div.innerHTML = date.toLocaleString()
+    },1000)
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text">
+  <button>点击</button>
+  <script>
+    document.querySelector('button').addEventListener('click',(event)=>{
+      //event 事件对象
+      //常用的一些属性
+      //type
+      console.log(event.type)
+      //clientX/clientY 获取到相对与浏览器窗口左上角的位置
+      console.log(event.clientX+':'+ event.clientY)
+      //offsetX/offsetY 获取光标相对与当前DOM元素左上角的位置
+      console.log(event.offsetX+':'+event.offsetY)
+    })
+    document.querySelector('input').addEventListener('keydown',(event)=>{
+      if (event.key==='Enter'){
+        console.log('hello')
+      }
+    })
+  </script>
+</body>
+</html>

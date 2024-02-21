@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+        }
+    </style>
+</head>
+<body>
+
+<ul>
+    <li>测试1</li>
+    <li>测试2</li>
+    <li>测试3</li>
+</ul>
+
+<ul class="nav">
+    <li>我的首页</li>
+    <li>产品介绍</li>
+    <li>联系方式</li>
+</ul>
+
+<div class="box">123</div>
+<div class="box">456</div>
+<p id="nav">导航</p>
+<script>
+    //获取匹配的第一个元素
+    // const box = document.querySelector('div')
+    // const box = document.querySelector('.box')
+    // console.log(box);
+    //
+    // const nav = document.querySelector('#nav')
+    // nav.style.color = 'red'
+    // console.log(nav)
+
+    // const ul = document.querySelector('ul')
+    // const li = ul.querySelector('li')
+    // const li = document.querySelector('ul li:first-child')
+    // console.log(li);
+    //
+    // const lis = document.querySelectorAll('ul li')
+    // console.log(lis)
+    // for (let i = 0; i < lis.length; i++) {
+    //     console.log(lis.item(i).textContent);
+    // }
+
+    const lis = document.querySelectorAll('.nav li')
+    console.log(lis);
+    for (let i = 0; i < lis.length; i++) {
+        // console.log(lis.item(i).style.color = 'red');
+        // lis.item(i).style.color = 'red';
+        console.log(lis[i]);
+    }
+</script>
+</body>
+</html>

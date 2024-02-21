@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+
+    //注意：localStorage只能存储字符串数据类型 并且数据关闭浏览器不会消失
+    //增
+    localStorage.setItem('az',18)
+    //删
+    localStorage.removeItem('az')
+    //改
+    localStorage.setItem('az',66)
+    //查
+    console.log(localStorage.getItem('az'));
+
+    //sessionStorage和上面的用法一致 但是关闭浏览器后数据会消失
+
+
+    //localStorage存储复杂的数据类型
+    const obj = {
+        id:1,
+        name:'az',
+        age:22
+    }
+    //由于localStorage只能够存储字符串 所以需要转化为JSON格式进行存储
+    localStorage.setItem('obj',JSON.stringify(obj))
+    //将字符串转化为对象
+    const after =  JSON.parse(localStorage.getItem('obj'))
+    console.log(after.name);
+
+
+
+</script>
+</body>
+</html>

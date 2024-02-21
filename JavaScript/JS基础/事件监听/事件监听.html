@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button>点我</button>
+<script>
+    //写法一
+    const button = document.querySelector('button')
+    //绑定对象.addEventListener(事件类型，事件函数)
+    button.addEventListener('click',function (){
+        alert('hello world')
+    })
+
+    //写法二 不推荐
+    // const button = document.querySelector('button')
+    // button.onclick = ()=>{
+    //     alert('hello world')
+    // }
+</script>
+</body>
+</html>

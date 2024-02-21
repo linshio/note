@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<p class="box">我是一段文本</p>
+
+<script>
+    const box = document.querySelector('.box')
+    // box.innerText = "<strong>Hello world</strong>" // 不解析标签
+    box.innerHTML = "<strong>Hello world</strong>"    // 解析标签
+</script>
+</body>
+</html>
